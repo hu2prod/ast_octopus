@@ -9,6 +9,7 @@
 # Обновляем
 
     ./manager.coffee --update
+    ./gen_sfa.coffee # опционально
 
 # Тестируем
 
