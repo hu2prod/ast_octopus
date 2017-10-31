@@ -1,4 +1,4 @@
-# ast_cotopus
+# ast_octopus
 Тестирует семейство полный pipeline lang_gen + ast4gen validate + ast2target
 
 # Запускаем
