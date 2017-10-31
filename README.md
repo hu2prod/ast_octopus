@@ -15,7 +15,8 @@
 
 TODO LATER commit + push
 
-# Как поставить Rust
+# Как поставить нужный ЯП
 
+    # Rust
     curl -sSf https://static.rust-lang.org/rustup.sh | sh
 
