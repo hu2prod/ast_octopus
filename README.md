@@ -14,3 +14,8 @@
     ./manager --test
 
 TODO LATER commit + push
+
+# Как поставить Rust
+
+    curl -sSf https://static.rust-lang.org/rustup.sh | sh
+
