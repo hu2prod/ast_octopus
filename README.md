@@ -3,15 +3,16 @@
 
 # Запускаем
 
-    ./manager --init
+    ./manager.coffee --init
+    ./gen_sfa.coffee
 
 # Обновляем
 
-    ./manager --update
+    ./manager.coffee --update
 
 # Тестируем
 
-    ./manager --test
+    ./manager.coffee --test
 
 TODO LATER commit + push
 
