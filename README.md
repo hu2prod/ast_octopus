@@ -1,10 +1,16 @@
 # ast_octopus
 Тестирует семейство полный pipeline lang_gen + ast4gen validate + ast2target
 
+# Устанавливаем
+
+    git clone git@github.com:hu2prod/ast_octopus.git
+    cd ast_octopus
+    npm i
+
 # Запускаем
 
-    ./manager.coffee --init
     ./gen_sfa.coffee
+    ./manager.coffee --init
 
 # Обновляем
 
