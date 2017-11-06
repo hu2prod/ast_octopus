@@ -14,8 +14,8 @@
 
 # Обновляем
 
-    ./manager.coffee --update
-    ./gen_sfa.coffee # опционально
+    ./manager.coffee --update # при первом запуске не нужно
+    ./gen_sfa.coffee          # опционально
 
 # Тестируем
 
