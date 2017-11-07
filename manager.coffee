@@ -88,4 +88,4 @@ if argv.test
           perr "lang #{k} error: #{v} != #{ref_result}"
           is_all_ok = false
       if is_all_ok
-        p "ok"
+        p "ok\n"

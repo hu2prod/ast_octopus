@@ -26,10 +26,28 @@ module.exports =
           }
         """
       build : ()->
-        exec 'cargo build'
+        exec 'cargo build -q'
       run : ()->
         rm 'log'
-        exec 'cargo run | tee log'
+        exec 'cargo run -q | tee log'
+    }
+    {
+      name : 'java'
+      sandbox_init : ()->
+      write_cont : (cont)->
+        fs.writeFileSync 'Main.java', """
+          class Main {
+            public static void main(String[] args) {
+              System.out.println(#{cont});
+            }
+          }
+        """
+      build : ()->
+        rm "Main.class"
+        exec 'javac Main.java'
+      run : ()->
+        rm 'log'
+        exec 'java Main | tee log'
     }
     # {
     #   name : 'coffee'
@@ -57,6 +75,5 @@ module.exports =
     #     rm 'log'
     #     exec 'cargo run | tee log'
     # }
-    # TODO java
     # TODO cpp
   ]
